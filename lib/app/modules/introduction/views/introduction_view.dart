@@ -41,7 +41,7 @@ class IntroductionView extends GetView<IntroductionController> {
             child: Container(
                 width: 300,
                 height: 300,
-                child: Lottie.asset('assets/lotties/animasi-quran-girl.json')),
+                child: Lottie.asset('assets/lotties/anim-quran-green.json')),
           ),
           SizedBox(
             height: 35,
@@ -51,12 +51,12 @@ class IntroductionView extends GetView<IntroductionController> {
             child: Text(
               "GET STARTED",
               style:
-                  TextStyle(color: Get.isDarkMode ? colorPurple : colorWhite),
+                  TextStyle(color: Get.isDarkMode ? colorGreen : colorWhite),
             ),
             style: ElevatedButton.styleFrom(
-                backgroundColor: Get.isDarkMode ? colorWhite : colorPurple,
+                backgroundColor: Get.isDarkMode ? colorWhite : colorGreen,
                 fixedSize: Size(150, 40),
-                shadowColor: Get.isDarkMode ? colorPurpleSoft : Colors.white,
+                shadowColor: Get.isDarkMode ? colorGreenSoft : Colors.white,
                 elevation: 3.5,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(50))),

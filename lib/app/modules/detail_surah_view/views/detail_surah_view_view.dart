@@ -72,8 +72,8 @@ class DetailSurahViewView extends GetView<DetailSurahViewController> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Get.isDarkMode
-                            ? colorPurpleSoft.withOpacity(0.2)
-                            : colorPurpleLight.withOpacity(0.08)),
+                            ? colorGreenSoft.withOpacity(0.2)
+                            : colorGreenLight.withOpacity(0.08)),
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
                           vertical: 10, horizontal: 10),
@@ -87,7 +87,7 @@ class DetailSurahViewView extends GetView<DetailSurahViewController> {
                               image: DecorationImage(
                                   image: AssetImage(Get.isDarkMode
                                       ? "assets/images/num-border-dark.png"
-                                      : "assets/images/num-border-light.png"),
+                                      : "assets/images/num-border-light-green.png"),
                                   fit: BoxFit.contain),
                             ),
                             child: Center(
@@ -112,7 +112,7 @@ class DetailSurahViewView extends GetView<DetailSurahViewController> {
                                             },
                                             child: Text("LAST READ"),
                                             style: ElevatedButton.styleFrom(
-                                                backgroundColor: colorPurple),
+                                                backgroundColor: colorGreen),
                                           ),
                                           ElevatedButton(
                                             onPressed: () {
@@ -121,7 +121,7 @@ class DetailSurahViewView extends GetView<DetailSurahViewController> {
                                             },
                                             child: Text("BOOKMARK"),
                                             style: ElevatedButton.styleFrom(
-                                                backgroundColor: colorPurple),
+                                                backgroundColor: colorGreen),
                                           )
                                         ]);
                                   },
@@ -129,7 +129,7 @@ class DetailSurahViewView extends GetView<DetailSurahViewController> {
                                     Icons.bookmark_border,
                                     color: Get.isDarkMode
                                         ? colorWhite
-                                        : colorPurpleDark,
+                                        : colorGreenDark,
                                   ),
                                 ),
                                 (ayat?.audioCondition == "stop")
@@ -141,7 +141,7 @@ class DetailSurahViewView extends GetView<DetailSurahViewController> {
                                           Icons.play_arrow,
                                           color: Get.isDarkMode
                                               ? colorWhite
-                                              : colorPurpleDark,
+                                              : colorGreenDark,
                                         ),
                                       )
                                     : Row(
@@ -156,7 +156,7 @@ class DetailSurahViewView extends GetView<DetailSurahViewController> {
                                                     Icons.pause,
                                                     color: Get.isDarkMode
                                                         ? colorWhite
-                                                        : colorPurpleDark,
+                                                        : colorGreenDark,
                                                   ),
                                                 )
                                               : IconButton(
@@ -167,7 +167,7 @@ class DetailSurahViewView extends GetView<DetailSurahViewController> {
                                                     Icons.play_arrow,
                                                     color: Get.isDarkMode
                                                         ? colorWhite
-                                                        : colorPurpleDark,
+                                                        : colorGreenDark,
                                                   ),
                                                 ),
                                           IconButton(
@@ -178,7 +178,7 @@ class DetailSurahViewView extends GetView<DetailSurahViewController> {
                                               Icons.stop,
                                               color: Get.isDarkMode
                                                   ? colorWhite
-                                                  : colorPurpleDark,
+                                                  : colorGreenDark,
                                             ),
                                           )
                                         ],
@@ -249,7 +249,7 @@ class DetailSurahViewView extends GetView<DetailSurahViewController> {
                       padding: EdgeInsets.all(20),
                       decoration: BoxDecoration(
                         color: Get.isDarkMode
-                            ? colorPurpleSoft.withOpacity(0.4)
+                            ? colorGreenSoft.withOpacity(0.4)
                             : colorWhite,
                         borderRadius: BorderRadius.circular(20),
                       ),
@@ -292,7 +292,7 @@ class DetailSurahViewView extends GetView<DetailSurahViewController> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         gradient: LinearGradient(
-                            colors: [colorPurpleLight, colorPurpleDark])),
+                            colors: [colorGreenLight, colorGreenDark])),
                     child: Padding(
                       padding: const EdgeInsets.all(15.0),
                       child: Column(

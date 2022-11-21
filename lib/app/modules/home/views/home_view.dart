@@ -31,7 +31,7 @@ class HomeView extends GetView<HomeController> {
                 style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
               ),
               Text(
-                "M. Kelvin Madrianto F",
+                "Hamba Allah",
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               SizedBox(
@@ -49,7 +49,7 @@ class HomeView extends GetView<HomeController> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                               gradient: LinearGradient(
-                                colors: [colorPurpleLight, colorPurpleDark],
+                                colors: [colorGreenLight, colorGreenDark],
                               ),
                             ),
                             child: Stack(
@@ -63,7 +63,7 @@ class HomeView extends GetView<HomeController> {
                                       width: 200,
                                       height: 200,
                                       child: Image.asset(
-                                        "assets/images/logo-quran.png",
+                                        "assets/images/quran-logo-green.png",
                                         fit: BoxFit.contain,
                                       ),
                                     ),
@@ -128,7 +128,7 @@ class HomeView extends GetView<HomeController> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                               gradient: LinearGradient(
-                                  colors: [colorPurpleLight, colorPurpleDark])),
+                                  colors: [colorGreenLight, colorGreenDark])),
                           child: Material(
                             color: Colors.transparent,
                             borderRadius: BorderRadius.circular(20),
@@ -191,7 +191,7 @@ class HomeView extends GetView<HomeController> {
                                         width: 200,
                                         height: 200,
                                         child: Image.asset(
-                                          "assets/images/logo-quran.png",
+                                          "assets/images/quran-logo-green.png",
                                           fit: BoxFit.contain,
                                         ),
                                       ),
@@ -321,7 +321,7 @@ class HomeView extends GetView<HomeController> {
                                           image: AssetImage(controller
                                                   .isDark.isTrue
                                               ? "assets/images/num-border-dark.png"
-                                              : "assets/images/num-border-light.png"),
+                                              : "assets/images/num-border-light-green.png"),
                                         ),
                                       ),
                                       child: Center(
@@ -394,7 +394,7 @@ class HomeView extends GetView<HomeController> {
                                     image: DecorationImage(
                                       image: AssetImage(controller.isDark.isTrue
                                           ? "assets/images/num-border-dark.png"
-                                          : "assets/images/num-border-light.png"),
+                                          : "assets/images/num-border-light-green.png"),
                                     ),
                                   ),
                                   child: Center(
@@ -403,7 +403,7 @@ class HomeView extends GetView<HomeController> {
                                     style: TextStyle(
                                         color: Get.isDarkMode
                                             ? colorWhite
-                                            : colorPurpleDark,
+                                            : colorGreenDark,
                                         fontSize: 12,
                                         fontWeight: FontWeight.w600),
                                   )),
@@ -634,7 +634,7 @@ class HomeView extends GetView<HomeController> {
                                             image: AssetImage(controller
                                                     .isDark.isTrue
                                                 ? "assets/images/num-border-dark.png"
-                                                : "assets/images/num-border-light.png"),
+                                                : "assets/images/num-border-light-green.png"),
                                           ),
                                         ),
                                         child: Center(
@@ -670,7 +670,7 @@ class HomeView extends GetView<HomeController> {
                                         Icons.delete,
                                         color: controller.isDark.isTrue
                                             ? colorWhite
-                                            : colorPurpleDark,
+                                            : colorGreenDark,
                                       ),
                                     ),
                                   ),
@@ -695,7 +695,7 @@ class HomeView extends GetView<HomeController> {
         child: Obx(
           () => Icon(
             Icons.color_lens,
-            color: controller.isDark.isTrue ? colorPurpleDark : colorWhite,
+            color: controller.isDark.isTrue ? colorGreenDark : colorWhite,
           ),
         ),
       ),
